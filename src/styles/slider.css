@@ -20,9 +20,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hero-slider{
-    overflow: hidden;
-}
 
 
 @media only screen and (max-width:992px) {
