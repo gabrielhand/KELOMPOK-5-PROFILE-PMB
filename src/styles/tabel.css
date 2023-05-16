@@ -1,9 +1,21 @@
 /* .table-condensed{
     font-size: 20px;
 } */
+img{
+    height: 30px;
+    width: 30px;
+}
 
 h5{
     background-color: black;
     color: white;
     padding: 5px;
+}
+
+.tdleft{
+    text-align: left;
+}
+
+td{
+    text-align: center;
 }
