@@ -8,15 +8,17 @@ import "../../styles/layout.css";
 
 const Layout = () => {
   return (
-    <Fragment>
-      <Navbar />
-      <Slider />
-      <div>
-        <Routers />
-      </div>
-      <Tabel />
-      <Footer />
-    </Fragment>
+    <div className="body">
+      <Fragment>
+        <Navbar />
+        <Slider />
+        <div>
+          <Routers />
+        </div>
+        <Tabel />
+        <Footer />
+      </Fragment>
+    </div>
   );
 };
 

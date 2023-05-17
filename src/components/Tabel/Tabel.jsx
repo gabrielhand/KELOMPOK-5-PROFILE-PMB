@@ -4,11 +4,11 @@ import { Table } from "react-bootstrap";
 
 const Tabel = () => {
   return (
-    <div className="mt-5">
-      <div className="col-6 p-1">
+    <div className="col-8 mt-5">
+      <div className="p-1">
         <h5>Club - Serie A 22/23</h5>
-        <Table className="table border border-dark bg-white table-condensed">
-          <thead className="table-light">
+        <Table className="table border border-dark table-responsive bg-white table-condensed">
+          <thead className="table-secondary border-dark">
             <tr>
               <th scope="col" colspan="2" className="text-left">
                 Club

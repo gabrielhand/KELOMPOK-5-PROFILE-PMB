@@ -19,3 +19,25 @@ h5{
 td{
     text-align: center;
 }
+
+
+/* @media only screen and (max-width: 992px) {
+    .table{
+        width: 600px;
+
+    }
+
+    .table-responsive {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .table{
+        width: 422px;
+    }
+
+    .table-responsive {
+        font-size: 10px !important;
+    }
+} */
