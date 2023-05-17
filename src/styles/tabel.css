@@ -1,16 +1,13 @@
-/* .table-condensed{
-    font-size: 20px;
-} */
 img{
     height: 30px;
     width: 30px;
 }
 
-h5{
+/* h5{
     background-color: black;
     color: white;
     padding: 5px;
-}
+} */
 
 .tdleft{
     text-align: left;
@@ -20,11 +17,9 @@ td{
     text-align: center;
 }
 
-
-/* @media only screen and (max-width: 992px) {
-    .table{
+@media only screen and (max-width: 992px) {
+    div{
         width: 600px;
-
     }
 
     .table-responsive {
@@ -33,11 +28,11 @@ td{
 }
 
 @media only screen and (max-width: 576px) {
-    .table{
+    div{
         width: 422px;
     }
 
     .table-responsive {
         font-size: 10px !important;
     }
-} */
+}
