@@ -1,63 +1,69 @@
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 import sr1 from '../../assets/sr1.jpg';
 import sr2 from '../../assets/sr2.jpg';
 import sr3 from '../../assets/sr3.jpg';
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import logo from '../../assets/logo.png';
+import itali from '../../assets/itali.png';
+import '../../styles/slider.css';
 
-const HeroSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
-
+function Slider() {
   return (
-    <Slider {...settings}>
-  <div>
-    <img src={sr1} alt="Slider 1" style={{ width: '100%', height: '35rem',  }} />
-  </div>
-  <div>
-    <img src={sr2} alt="Slider 2" style={{ width: '100%', height: '35rem' }} />
-  </div>
-  <div>
-    <img src={sr3} alt="Slider 3" style={{ width: '100%', height: '35rem' }} />
-  </div>
-</Slider>
+    <>
+    <Carousel>
+      <Carousel.Item>
+        <div
+          className="slider-item slider-item-01"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)), url(${sr1})`,
+          }}
+        >
+          
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div
+          className="slider-item slider-item-02"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)), url(${sr2})`,
+          }}
+        >
+          
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div
+          className="slider-item slider-item-03"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)), url(${sr3})`,
+          }}
+        >
+          
+        </div>
+      </Carousel.Item>
+    </Carousel>
 
+    <div className="info">
+      <p style={{marginLeft: `12rem`, color:`white`}}>Serie A</p>
+      <img src={logo} alt="" style={{width: `9rem`, height:`13rem`, marginLeft:`2rem`, marginTop: `-5.5rem`}} />
+
+      <div className="info2" style={{backgroundColor:`white`, width:`20rem`, marginLeft: `12rem`, marginTop:`-7rem`}}>
+        <p>Number of teams : 20 teams</p>
+        <p>Foreigners : 351 Players 62,7%</p>
+      </div>
+      <div className="right" style={{backgroundColor:`white`, width:`30rem`, height:`7rem`, marginLeft: `52rem`, marginTop:`-8rem`, padding:`1rem`}}>
+        <img src={itali} alt="" style={{width:`7rem`, height: `6rem`}} />
+        <p style={{marginTop:`-6rem`}}>Itali</p>
+          <p>Reigning Champion : SCC NAPOLI</p>
+          <p>History Champion : Juventus(36)</p>
+      </div>
+      <div className="right2" style={{backgroundColor:`#154A7B`, width:`14rem`, height:`7rem`, marginLeft: `35rem`, marginTop:`-7rem`, padding:`1rem`}}>
+        <h1>€4.63bn</h1>
+        <p>Market Value</p>
+      </div>
+    </div>
+    </>
   );
-};
+}
 
-export default HeroSlider;
+export default Slider;

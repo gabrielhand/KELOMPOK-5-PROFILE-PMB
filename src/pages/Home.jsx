@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/tabel.css";
+import "../styles/tabel.css";
 import { Table } from "react-bootstrap";
 
 const Tabel = () => {
@@ -16,7 +16,7 @@ const Tabel = () => {
           </thead>
           <thead className="table-secondary border-dark">
             <tr>
-              <th scope="col" colspan="2" className="text-left">
+              <th scope="col" colSpan="2" className="text-left">
                 Club
               </th>
               <th scope="col" className="text-center">

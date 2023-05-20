@@ -1,44 +1,89 @@
-.slider-item{
+.slider-item {
     max-width: 100%;
     height: 650px;
-}
-.slider-item-01{
-    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)), url('../assets/sr1.jpg');
+  }
+  
+  .slider-item-01 {
+    background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
+      url('../assets/sr1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.slider-item-02{
-    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)), url('../assets/sr2.jpg');
+  }
+  
+  .slider-item-02 {
+    background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
+      url('../assets/sr2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.slider-item-03{
-    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)), url('../assets/sr3.jpg');
+  }
+  
+  .slider-item-03 {
+    background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
+      url('../assets/sr3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
+
+  .info{
+    background-color: black;
+    height: 15rem;
+  }
+  .info p{
+    font-size: 3rem;
+  }
+  .info2 p{
+    font-size: 1rem;
+    padding: 7px;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+  }
+  .right p{
+    font-size: 0.8rem;
+    margin-left: 9rem;
+    font-weight: bold;
+  }
+  .right2 p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  .right2 h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
 
 
-@media only screen and (max-width:992px) {
-    .slider-item{
-        height: 530px;
-        width: 100%;
+
+
+
+  
+  @media only screen and (max-width: 992px) {
+    .slider-item {
+      height: 530px;
+      width: 100%;
     }
-    .slider-content{
-        margin-top: 100px;
+  
+    .slider-content {
+      margin-top: 100px;
     }
-    .slider-content h1{
-        font-size: 2rem;
+  
+    .slider-content h1 {
+      font-size: 2rem;
     }
-}
-@media only screen and (max-width:768px) {
-    .slider-item{
-        height: 450px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .slider-item {
+      height: 450px;
     }
-    .slider-content h1{
-        font-size: 1.5rem;
+  
+    .slider-content h1 {
+      font-size: 1.5rem;
     }
-}
+  }
+  

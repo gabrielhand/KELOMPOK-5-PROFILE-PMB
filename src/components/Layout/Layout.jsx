@@ -3,7 +3,6 @@ import Navbar from "../Navbar/Navbar";
 import Slider from "../Slider/Slider";
 import Footer from "../Footer/Footer";
 import Routers from "../../routers/Routers";
-import Tabel from "../Tabel/Tabel";
 import "../../styles/layout.css";
 
 const Layout = () => {
@@ -15,7 +14,6 @@ const Layout = () => {
         <div>
           <Routers />
         </div>
-        <Tabel />
         <Footer />
       </Fragment>
     </div>
