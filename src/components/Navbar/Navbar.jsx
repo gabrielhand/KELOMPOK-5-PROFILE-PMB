@@ -20,7 +20,7 @@ const NavigationBar = () => {
           <Nav className="nav-Links ms-auto">
             <Nav.Link href="/" >Home</Nav.Link>
             <Nav.Link href="/scudetto" >Scudetto</Nav.Link>
-            <Nav.Link href="/copitalia">CoppaItali</Nav.Link>
+            <Nav.Link href="/copitalia">Coppa Itali</Nav.Link>
             <Nav.Link href="/news"  >News</Nav.Link>
           </Nav>
         </Navbar.Collapse>

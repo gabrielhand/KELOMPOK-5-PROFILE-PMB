@@ -1,51 +1,68 @@
 import React from 'react'
 import { Table } from "react-bootstrap";
-import DataHome from '../assets/data/dataHome.js';
+import lpng from '../assets/lpng.png';
+import DataScudetto from '../assets/data/DataScudetto'
 import '../styles/tabel.css';
 
-const Home = () => {
+const Scudetto = () => {
   return (<div className="col-12 mt-5">
   <div className="p-1">
     <Table className="table border border-dark table-responsive bg-white table-condensed">
       <thead className="table-dark">
         <tr>
           <th colspan="11">
-            <h5>Club Serie A 22/23</h5>
+            <h5>Scudetto</h5>
           </th>
         </tr>
       </thead>
       <thead className="table-secondary border-dark">
         <tr>
-          <th scope="col" colSpan="2" className="text-left">
+          <th scope="col" className="text-center">
+            #
+          </th>
+          <th scope="col" colSpan="2" className="text-center">
             Club
           </th>
           <th scope="col" className="text-center">
-            Squad
+            <img src={lpng} alt="" />
           </th>
           <th scope="col" className="text-center">
-            Age
+            W
           </th>
           <th scope="col" className="text-center">
-            Market Value
+            D
           </th>
           <th scope="col" className="text-center">
-            Total Market Value
+            L
+          </th>
+          <th scope="col" className="text-center">
+            Goals
+          </th>
+          <th scope="col" className="text-center">
+            +/-
+          </th>
+          <th scope="col" className="text-center">
+            Pts
           </th>
         </tr>
       </thead>
       <tbody>
-          {DataHome.map((data) => (
+          {DataScudetto.map((data) => (
             <tr key={data.id}>
+              <td className="text-center">{data.no}</td>
               <td colSpan="2" className="tdleft">
                 <img src={data.club} alt="" style={{marginRight:"20px"}} />
                 {data.name}
               </td>
-              <td className="text-left">{data.squad}</td>
               <td className="text-center">
-              {data.age}
+              {data.lp}
               </td>
-              <td className="text-center">{data.marketV}</td>
-              <td className="text-center">{data.totalMarketV}</td>
+              <td className="text-center">{data.w}</td>
+              <td className="text-center">{data.d}</td>
+              <td className="text-center">{data.l}</td>
+              <td className="text-center">{data.goals}</td>
+              <td className="text-center">{data.pm}</td>
+              <td className="text-center">{data.pts}</td>
             </tr>
           ))}
         </tbody>
@@ -56,4 +73,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Scudetto;
